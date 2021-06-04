@@ -1,0 +1,6 @@
+# template .env file acceptable for public repo
+DATABASE_PORT="5432"
+DATABASE_NAME="contacts_dates"
+DATABASE_USERNAME="postgres"
+DATABASE_URL="psql://postgres@localhost/${DATABASE_NAME}"
+DATABASE_SECRET="blahblahblah"
