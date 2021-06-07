@@ -5,7 +5,7 @@
 
 ## Install Notes:
 
-To install psycopg2 you will need to install:
+To install psycopg2 first requires:
 ```
 python3-dev and libpq-dev
 ```
