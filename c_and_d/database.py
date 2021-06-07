@@ -14,7 +14,13 @@ import psycopg2
 class Database:
     """Handles connection to database"""
 
-    def __init__(self, dbname, password, host='localhost', user='postgres', ):
+    def __init__(
+        self,
+        dbname,
+        password,
+        host="localhost",
+        user="postgres",
+    ):
         self.dbname = dbname
         self.user = user
         self.host = host
@@ -22,8 +28,9 @@ class Database:
 
     def __connect__(self):
         try:
-            self.conn = psycopg2.connect("dbname=self.dbname user=self.user \
-            host=self.host password=self.password")
+            self.conn = psycopg2.connect(
+                "dbname=self.dbname user=self.user host=self.host password=self.password"
+            )
             self.cur = self.con.cursor()
         except:
             print("Connection failed")
